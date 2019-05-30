@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Like Salc*</title>
+    <script src="{{ url_for('static', filename='js-file.js') }}"></script>
+
+   
+    <style media="screen">
+      .login_form{
+        margin-left: 50%;
+        margin-top: 20%;
+        width: 30%;
+      }
+      body{
+        
+	      background-image: url("{{url_for('static', filename ='images/home.jpg')}}");
+        background-repeat: no-repeat;
+        background-size: contain contain ;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <h1 class="card-header" style="color :white;">  Welcome for communicating </h1>
+    <form class="login_form form-group" id="user_login_name">
+      <input type="text" class="form-control" id="user_name" name="usr_name" placeholder="Enter ur name">
+      <button type="submit" class="btn btn-primary" id="submit">Login</button>
+    </form>
+  </body>
+</html>
